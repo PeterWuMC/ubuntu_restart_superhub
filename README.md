@@ -11,3 +11,7 @@ sudo apt-get install xorg-x11-fonts*
 then run the setup.sh (only run it once, otherwise you would have created duplicated startup script and crob task)
 
 currently its set to check your internet connectivity every 30minutes
+
+
+### Log
+check log/execution.log to find out about the execution status.
