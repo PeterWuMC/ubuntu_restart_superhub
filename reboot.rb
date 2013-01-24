@@ -18,6 +18,7 @@ unless ($?.exitstatus == 0)
     sleep 2
   rescue => e
     logger.error "[#{Time.now.utc.strftime("%Y/%m/%d %H:%M:%S")}] ...Something is wrong - #{e.class}: #{e.message}: #{e.backtrace}"
+    logger.error "[#{Time.now.utc.strftime("%Y/%m/%d %H:%M:%S")}] #{page.body}"
   end
 end
 logger.debug "[#{Time.now.utc.strftime("%Y/%m/%d %H:%M:%S")}] END"
