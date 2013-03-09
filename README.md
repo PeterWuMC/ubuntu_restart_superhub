@@ -1,12 +1,12 @@
-### Installation
-please install firefox and Xvfb
+This version of the project is using a USB power relay to force power in/out of the router, in order to simulate a reboot. Since virgin superhub lack of remote reboot function, an external hardware is needed.
 
-```
-sudo apt-get install firefox
-sudo apt-get install Xvfb
-sudo apt-get install Xorg
-sudo apt-get install xorg-x11-fonts*
-```
+### Hardware
+http://cgi.ebay.co.uk/ws/eBayISAPI.dll?ViewItem&item=251215222287&ssPageName=ADME:X:RTQ:GB:1123
+
+### Driver
+FTDI - http://dograt.homelinux.com:8080/products/files/4xRelay-USB/demo_source/set_relay_linux_r26.tar.bz2
+
+### Installation
 
 then run the setup.sh (only run it once, otherwise you would have created duplicated startup script and crob task)
 
