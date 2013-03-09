@@ -7,8 +7,7 @@ http://cgi.ebay.co.uk/ws/eBayISAPI.dll?ViewItem&item=251215222287&ssPageName=ADM
 FTDI - http://dograt.homelinux.com:8080/products/files/4xRelay-USB/demo_source/set_relay_linux_r26.tar.bz2
 
 ### Installation
-
-then run the setup.sh (only run it once, otherwise you would have created duplicated startup script and crob task)
+run the setup.sh (only run it once, otherwise you would have created duplicated startup script and crob task)
 
 currently its set to check your internet connectivity every 30minutes
 
