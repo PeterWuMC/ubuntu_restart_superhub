@@ -2,9 +2,10 @@ require 'logger'
 
 logger = Logger.new(File.join(File.expand_path(File.dirname(__FILE__)), "log/execution.log"))
 logger.debug "[#{Time.now.utc.strftime("%Y/%m/%d %H:%M:%S")}] BEGIN"
+logger.level = Logger::WARN
 
 ping_count = 5
-server = "4.2.2.2"
+server = "8.8.8.8"
 result = `ping -q -c #{ping_count} #{server}`
 unless ($?.exitstatus == 0)
   logger.warn "[#{Time.now.utc.strftime("%Y/%m/%d %H:%M:%S")}] ...RESTARTING SUPERHUB"
